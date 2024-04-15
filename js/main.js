@@ -1,32 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    "use strict";
+const mmtContainer = document.querySelector('.m-m-t');
 
-    // Get the video element
-    let video = document.getElementById('video');
-
-    // Wait for the video metadata to load
-    video.addEventListener('loadedmetadata', function() {
-        // Play the video
-        video.play();
-    });
-
-    // Hide the controls
-    video.removeAttribute("controls");
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    "use strict";
-
-    // Get the video element
-    let video = document.getElementById('video1');
-
-    // Wait for the video metadata to load
-    video.addEventListener('loadedmetadata', function() {
-        // Play the video
-        video.play();
-    });
-
-    // Hide the controls
-    video.removeAttribute("controls");
+mmtContainer.addEventListener('mousemove', function(event) {
+    const rect = mmtContainer.getBoundingClientRect();
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
+    
+    mmtContainer.style.setProperty('--mouse-x', mouseX + 'px');
+    mmtContainer.style.setProperty('--mouse-y', mouseY + 'px');
 });

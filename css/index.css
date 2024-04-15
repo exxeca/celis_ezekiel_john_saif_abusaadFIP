@@ -340,4 +340,24 @@ img, embed, object, video, picture {
 } */
 
 
+/* effects */
+
+.dissolve-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255,255,255,0) 50%, rgba(255,255,255,0.8) 80%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none; /* Ensures the pseudo-element doesn't interfere with mouse events */
+}
+
+.dissolve-effect:hover::after {
+    opacity: 1;
+}
+
+
 

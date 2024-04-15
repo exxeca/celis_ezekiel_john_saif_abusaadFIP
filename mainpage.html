@@ -12,12 +12,15 @@
     <link href="css/main.css" rel="stylesheet">
 
     <link href="css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mirageeffect.css">
 
     <title>ZIMA</title>
 
 </head>
 
     <body>
+
+        <div class="mirage-effect"></div>
        
 
 
@@ -106,28 +109,38 @@
           
 
             <div id="menu-lb-product1" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-1 l-col-end-3">
-                
-                <h2>ORIGINAL</h2>
-                <h3>BLUE MIST</h3>
+                <a href="description-page-original.html" target="_blank" rel="noopener noreferrer">
+                    <div class="hover-animation1">
+                        <h2>ORIGINAL</h2>
+                        <h3>BLUE MIST</h3>
+                    </div>
+                </a>
             </div>
+            
             <div id="menu-lb-product2" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-3 l-col-end-5">
-                
-                <h2>VELVET</h2>
-                <h3>LEMONADE</h3>
+                <a href="description-page-velvet.html" target="_blank" rel="noopener noreferrer">
+                    <div class="hover-animation2">
+                        <h2>VELVET</h2>
+                        <h3>LEMONADE</h3>
+                    </div>
+                </a>
             </div>
             <div id="menu-lb-product3" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-5 l-col-end-7">
-               
-                <h2>MIDNIGHT</h2>
-                <h3>SHADOWBERRY</h3>
+                <a href="description-page-midnight.html" target="_blank" rel="noopener noreferrer">
+                    <div class="hover-animation3">
+                        <h2>MIDNIGHT</h2>
+                        <h3>SHADOWBERRY</h3>
+                    </div>
+                </a>
             </div>
 
             <!-- menu lb prod description -->
 
             <div id="menu-lb-prod" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-7 l-col-end-9">
                 <ul>
-                    <li><img src="images/Mainpage-Images/lightbox-images/Group-42.svg" alt="">Chill Vibes One Sip at a Time</li>
-                    <li><img src="images/Mainpage-Images/lightbox-images/Group-49@2x.svg" alt="">Excite & Sparkle the Taste</li>
-                    <li><img src="images/Mainpage-Images/lightbox-images/SHADOWBERRY-LABEL-PLASTIC.svg" alt="">This is where Flavor Gets Lit!</li>
+                    <li><a href="mainpage.html#velvet" target="_blank" rel="noopener noreferrer"><img src="images/Mainpage-Images/lightbox-images/Group-42.svg" alt="">Chill Vibes One Sip at a Time</a></li>
+                    <li><a href="mainpage.html#blue" target="_blank" rel="noopener noreferrer"><img src="images/Mainpage-Images/lightbox-images/Group-49@2x.svg" alt="">Excite & Sparkle the Taste</a></li>
+                    <li><a href="mainpage.html#mdnght" target="_blank" rel="noopener noreferrer"><img src="images/Mainpage-Images/lightbox-images/SHADOWBERRY-LABEL-PLASTIC.svg" alt="">This is where Flavor Gets Lit!</a></li>
                 </ul>
             </div>
 
@@ -228,7 +241,7 @@
 
         <!-- p1 (product one) -->
 
-        <div class="p1 l-col-span-full">
+        <div id="velvet" class="p1 l-col-span-full">
 
             <div id="txt-p1">
                 <!-- TEXT AND BUTTON HERE -->
@@ -250,7 +263,7 @@
 
         <!-- ENDS HERE -->
 
-        <div class="p2 l-col-span-full">
+        <div id="blue" class="p2 l-col-span-full">
 
             <div id="txt-p2">
                 <!-- TEXT AND BUTTON HERE -->
@@ -270,7 +283,7 @@
             </div>
         </div>
 
-        <div class="p3 l-col-span-full">
+        <div id="mdnght" class="p3 l-col-span-full">
 
             <div id="txt-p3">
                 <!-- TEXT AND BUTTON HERE -->
@@ -349,5 +362,6 @@
         
         <script src="js/main.js"></script>  
         <script src="js/discription.js"> </script>
+        <script src="js/mirage.js"></script>
     </body>
 </html>
