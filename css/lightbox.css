@@ -379,11 +379,19 @@
 /* menu lb prod */
 
 #menu-lb-prod ul li a {
-    color: white; /* Initial color */
-    transition: color 0.3s ease; /* Smooth transition */
+    color: white; 
+    transition: color 0.4s ease; 
 }
 
 #menu-lb-prod ul li a:hover {
-    color: #FF9D00; /* Color on hover */
+    color: #FF9D00; 
     
+}
+#menu-nav-lb ul li a {
+    transition: color 0.3s ease; 
+}
+
+#menu-nav-lb ul li a:hover {
+    color: #FF9D00; 
+    font-weight: bold;
 }
