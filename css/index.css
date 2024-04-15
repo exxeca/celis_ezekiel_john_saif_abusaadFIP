@@ -24,6 +24,10 @@ a{
 .blur {
     position: relative; 
  }
+
+ .blur-lb {
+    position: relative; 
+ }
  
 .sec1{
     margin-top: 429px;
@@ -120,7 +124,21 @@ footer div:nth-child(4){
     z-index: -1;
     border-radius: inherit; 
     opacity: 0;
-   
+ }
+
+ .blur-lb::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.5);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    z-index: -1;
+    border-radius: inherit; 
+    opacity: 0;
  }
 
 
@@ -157,7 +175,25 @@ footer div:nth-child(4){
     font-size: 15px;
 }
 
+#menu-nav-lb ul {
+    /* background-color: aqua; */
+    margin-top: 35px;
+    margin-left: 165px;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 15px;
+}
+
 #menu-nav li{
+    display: inline;
+    margin: 5px;
+    
+    text-align: center;
+    
+    /* background-color: blue; */
+    
+}
+
+#menu-nav-lb li{
     display: inline;
     margin: 5px;
     
@@ -176,6 +212,10 @@ body {
 
 
 #menu-lb img {
+    margin-top: 22px;
+}
+
+#menu-lb-2 img {
     margin-top: 22px;
 }
 
@@ -230,36 +270,66 @@ img, embed, object, video, picture {
      margin-top: 10px;
      margin-bottom:10px;
    }
-  #menu, #logo{
+
+     
+  .box-lb {
+    /* background-color: rgb(97, 0, 21); */
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* padding: 50px; */
+    /* padding-bottom: 60px; */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+
+
+
+   
+  #menu, #logo, #logo-lb{
       padding:30px ;
   }
 
 
 
-   #hero-image {
-    /* display: none; */
+  #hero-image {
     position: relative;
     display: inline-block;
     padding: 75px;
     cursor: pointer;
-   }
-   
-   #hero-image img::after {
-    content: "Hovered!";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Fade-in transition */
-   }
+}
 
-   #hero-image img:hover::after {
+#hero-image a::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    z-index: 2; 
+    font-size: 15px;
+    background-repeat: no-repeat;
+    background-image: url(../images/bear-hover-index/Polar\ Bear\ Details@2x.png);
+    /* Specify the position and size for each background image */
+    background-position: center; /* Positions for each image */
+    background-size: contain; /* Sizes for each image */
+
+}
+
+
+#hero-image a:hover::after {
     opacity: 1; 
-  }
+}
+
+#hero-image a img {
+    z-index: 1; /* Ensure the image is behind the pseudo-element */
+}
+
+
+
+
 
 /* .video3d {
     height: 30vh;

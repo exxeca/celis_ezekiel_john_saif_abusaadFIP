@@ -276,14 +276,15 @@ body, p, h1, h3, h4, h5 {
     margin-bottom: 20px;
 }
 
-.p4 h4 {
+.p4 h3 p{
     font-size: 14px;
     font-family: 'SF-Pro-Text-Light';
     width: 500px;
 }
 
-.p4 h4 p {
+#section-c p {
     margin-bottom: 20px;
+    font-family: 'SF-Pro-Text-Light';
 }
 
 /* ----------------SECTION D----------- */
@@ -315,17 +316,21 @@ body, p, h1, h3, h4, h5 {
     margin-top: 75px;
 }
 
-.d5 h3 {
+.d5 p {
     /* background-color: #FF9D00; */
     text-align: left;
     font-family: 'SF-Pro-Text-Light';
     font-size: 23px;
-    margin-top: 300px;
+    
     width: 550px;
 }
 
-.d5 h3 p {
+.d5 p {
     margin-bottom: 30px;
+}
+
+.d5 {
+    margin-top: 300px;
 }
 
 

@@ -168,6 +168,7 @@
     
     font-family: 'SF-Pro-Text-Regular';
     font-size: 20px;
+    color: aliceblue;
    
     
 }
@@ -275,6 +276,50 @@
     background-repeat: no-repeat;
     background-position-x: center;
 
+}
+
+
+/* changes */
+
+#logo-lb{
+    padding:30px ;
+}
+
+#menu-nav-lb ul {
+    /* background-color: aqua; */
+    margin-top: 35px;
+    margin-left: 165px;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 15px;
+}
+
+#menu-nav-lb li{
+    display: inline;
+    margin: 5px;
+    
+    text-align: center;
+    
+    /* background-color: blue; */
+    
+}
+
+.box-lb {
+    /* background-color: rgb(97, 0, 21); */
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* padding: 50px; */
+    /* padding-bottom: 60px; */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+
+  .blur-lb {
+    position: relative; 
+ }
+
+ #menu-lb-2 img {
+    margin-top: 22px;
 }
 
 
