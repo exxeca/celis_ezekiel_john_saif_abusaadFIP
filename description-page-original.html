@@ -10,6 +10,7 @@
     <link href="css/grid.css" rel="stylesheet">
     <!-- <link href="css/index.css" rel="stylesheet"> -->
     <link href="css/descriptionpage.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/descriptionpage-original.css">
 
     <link href="css/lightbox.css" rel="stylesheet">
 
@@ -20,8 +21,7 @@
     <body>
        
 
-
-<!-- --------------SECTION A--------------------- -->
+<!-- SECTION A -->
 
 <div id="section-a" class="container">
     <div class="grid-con">
@@ -40,7 +40,7 @@
         <div id="menu-nav" class="box blur col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-7 l-col-end-11">
             <ul>
                 <li><a href="Aboutpage.html">About</a></li>
-                <li><a href="index.html">Login</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </div>
 
@@ -59,79 +59,85 @@
 
 
 <main>
-    <!-- LIGHTBOX -->
-    <section class="lightbox" id="lightbox1">
-        <h2 class="hidden">Rini LightBox</h2>
+   <!-- LIGHTBOX -->
+   <section class="lightbox" id="lightbox1">
+    <h2 class="hidden">Rini LightBox</h2>
+    
+    <!-- div content -->
+    <div class="grid-con">
         
-        <!-- div content -->
-        <div class="grid-con">
-            <h1 class="hidden">div</h1>
+        
+        <div draggable="true" id="logo-lb" class="box-lb blur-lb l-col-start-1 l-col-end-3">
+            <img src="images/Landing-Page-Images/SVG/Menu-logo.svg" alt="this is menu logo">
+        </div>
+        
+        <div id="menu-mt-lb" class="box-lb blur-lb l-col-start-3 l-col-end-7">
+        </div>
+        
+        <div id="menu-nav-lb" class="box-lb blur-lb l-col-start-7 l-col-end-11">
+            <ul>
+                <li><a href="Aboutpage.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        
+        <!-- closing lb -->
+        <div id="menu-lb-2" class="box-lb blur-lb l-col-start-11 l-col-end-13">
+            <a href="description-page-original.html">
+                <img src="images/Landing-Page-Images/SVG/Menu-lb.svg" alt="">
+            </a>
+        </div>
+
+
+        <!-- text line -->
+
+        <div id="menu-lb-text" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-1 l-col-end-13">
+            <p>A GREAT WAY TO INTERACT FRESHNESS</p>
+        </div>
+
+        <!-- product-boxes -->
+      
+
+        <div id="menu-lb-product1" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-1 l-col-end-3">
             
-            <!-- Logo -->
-            <div draggable="true" id="logo" class="box blur col-start-1 col-end-4 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-3">
-                <img src="images/Landing-Page-Images/SVG/Menu-logo.svg" alt="this is menu logo">
-            </div>
+            <h2>ORIGINAL</h2>
+            <h3>BLUE MIST</h3>
+        </div>
+        <div id="menu-lb-product2" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-3 l-col-end-5">
             
-            <!-- Menu MT -->
-            <div id="menu-mt" class="box blur col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-3 l-col-end-7"></div>
+            <h2>VELVET</h2>
+            <h3>LEMONADE</h3>
+        </div>
+        <div id="menu-lb-product3" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-5 l-col-end-7">
+           
+            <h2>MIDNIGHT</h2>
+            <h3>SHADOWBERRY</h3>
+        </div>
+
+        <!-- menu lb prod description -->
+
+        <div id="menu-lb-prod" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-7 l-col-end-9">
+            <ul>
+                <li><img src="images/Mainpage-Images/lightbox-images/Group-42.svg" alt="">Chill Vibes One Sip at a Time</li>
+                <li><img src="images/Mainpage-Images/lightbox-images/Group-49@2x.svg" alt="">Excite & Sparkle the Taste</li>
+                <li><img src="images/Mainpage-Images/lightbox-images/SHADOWBERRY-LABEL-PLASTIC.svg" alt="">This is where Flavor Gets Lit!</li>
+            </ul>
+        </div>
+
+        <!-- Learn More -->
+        <div id="menu-lb-lmore" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-9 l-col-end-11">
+            <h2>LEARN MORE</h2>
+            <ul>
+                <li>License</li>
+                <li>Legal</li>
+                <li>Careers</li>
+                <li>Reviews</li>
+                <li>Support</li>
+            </ul>
+        </div>
+        <!-- Social Media -->
+        <div id="menu-lb-scmedia" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-11 l-col-end-13">
             
-            <!-- Menu Navigation -->
-            <div id="menu-nav" class="box blur col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-7 l-col-end-11">
-                <ul>
-                    <li>About</li>
-                    <li>Login</li>
-                </ul>
-            </div>
-            
-            <!-- Menu Lightbox -->
-            <div id="menu-lb" class="box blur col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-11 l-col-end-13">
-                <a href="description-page.html">
-                    <img src="images/Landing-Page-Images/SVG/Menu-lb.svg" alt="">
-                </a>
-            </div>
-
-            <!-- Text Line -->
-            <div id="menu-lb-text" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-1 l-col-end-13">
-                <p>A GREAT WAY TO INTERACT FRESHNESS</p>
-            </div>
-
-            <!-- Product Boxes -->
-            <div id="menu-lb-product1" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-1 l-col-end-3">
-                <h2>ORIGINAL</h2>
-                <h3>BLUE MIST</h3>
-            </div>
-            <div id="menu-lb-product2" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-3 l-col-end-5">
-                <h2>VELVET</h2>
-                <h3>LEMONADE</h3>
-            </div>
-            <div id="menu-lb-product3" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-5 l-col-end-7">
-                <h2>MIDNIGHT</h2>
-                <h3>SHADOWBERRY</h3>
-            </div>
-
-            <!-- Menu Lightbox Product Description -->
-            <div id="menu-lb-prod" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-7 l-col-end-9">
-                <ul>
-                    <li><img src="images/Mainpage-Images/lightbox-images/Group 42.svg" alt="">Chill Vibes One Sip at a Time</li>
-                    <li><img src="images/Mainpage-Images/lightbox-images/Group 49@2x.svg" alt="">Excite & Sparkle the Taste</li>
-                    <li><img src="images/Mainpage-Images/lightbox-images/SHADOWBERRY LABEL PLASTIC.svg" alt="">This is where Flavor Gets Lit!</li>
-                </ul>
-            </div>
-
-            <!-- Learn More -->
-            <div id="menu-lb-lmore" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-9 l-col-end-11">
-                <ul>
-                    <h2>LEARN MORE</h2>
-                    <li>License</li>
-                    <li>Legal</li>
-                    <li>Careers</li>
-                    <li>Reviews</li>
-                    <li>Support</li>
-                </ul>
-            </div>
-
-            <!-- Social Media -->
-            <div id="menu-lb-scmedia" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-11 l-col-end-13">
                 <h2>STAY IN TOUCH</h2>
                 <div class="scmedia-container">
                     <div class="scmedia1"></div>
@@ -139,21 +145,26 @@
                     <div class="scmedia3"></div>
                 </div>
                 <p>saezel-zima@enterprise.ca</p>
-            </div>
 
-            <!-- Refreshness -->
-            <div id="menu-lb-design" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-1 l-col-end-10"></div>
-
-            <!-- Bear Zima -->
-            <div id="menu-lb-design2" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-10 l-col-end-13"></div>
         </div>
-    </section>
+
+        <!-- REfreshness -->
+
+        <div id="menu-lb-design" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-1 l-col-end-10"></div>
+
+        <!-- bear zima -->
+
+        <div id="menu-lb-design2" class="col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-10 l-col-end-13"></div>
+    </div>
+    
+   
+        </section>
 </main>
 
 
 
 
-<!-- --------------SECTION B--------------------- -->
+<!-- SECTION B -->
 <section id="section-b" class="grid-con">
     <!-- p1 (product one) -->
     <div class="p1 l-col-span-full">
@@ -169,7 +180,7 @@
     </div>
 </section>
 
-<!-- --------------SECTION C--------------------- -->
+<!-- SECTION D -->
 <section id="section-c" class="grid-con">
     <div class="p2 l-col-span-full">
         <h2>ORIGINAL BLUE MIST</h2>
@@ -179,15 +190,21 @@
 
     <div class="p4 l-col-start-7 l-col-end-13">
         <h3>HOW THE FLAVOR IS BORN</h3>
-        <h4><p>The story behind Zima's Velvet Lemonade flavor is pretty epic, let me break it down for you. So, picture this: a bunch of us flavor enthusiasts, right? We're talking a crew of taste explorers, fueled by curiosity and a serious love for all things refreshment. We're brainstorming ideas, tossing around flavors like confetti, searching for that next big thing. And then, in the midst of the flavor chaos, someone drops it: "Hey, why not blend lemonade's zesty kick with velvet's smooth vibes?" It's like a flavor bomb went off in the room, you know?</p>
+        <p>Alright, let's craft a Gen Z-friendly description for the birth of Zima's Original Blue Mist flavor:
 
-            <p>From that moment on, it was game on. We dove headfirst into the flavor lab, mixing, matching, and tasting until we found that perfect balance. And let me tell you, it wasn't easy. There were taste tests galore, late-night brainstorming sessions, and more than a few Snapchat breaks along the way.</p>
+            <p> In the lab where flavors collide and creativity runs wild, the journey to create Zima's Original Blue Mist flavor was like stepping into a dream. Imagine this: a squad of flavor wizards, armed with passion and a knack for adventure, diving headfirst into the quest for the ultimate taste sensation.</p>
             
-            <p>But you know what? It was all worth it. Because out of that chaos emerged something truly special: Zima's Velvet Lemonade. It's like a flavor fusion straight out of our wildest dreams – tangy, yet smooth; zesty, yet sophisticated. It's the flavor that speaks to our generation, capturing the essence of our vibe in every sip. So, next time you crack open a bottle of Velvet Lemonade, remember the journey that brought it to life. And let's raise a toast to the flavor squad – because when we come together, there's nothing we can't create. Cheers to that!</p></h4>
+            <p>Inspired by the vibes of a misty morning and the chill of mountain air, the vision for Original Blue Mist began to take shape. It wasn't just about flavor—it was about crafting an experience, a moment of escape from the everyday grind.
+            
+            With a mix of top-notch ingredients and a whole lot of trial and error, we set out to blend citrusy zest with a hint of mystery, creating layers of flavor that hit different in all the right ways. After countless taste tests and late-night brainstorming sessions, we cracked the code.</p>
+            
+            <p>Original Blue Mist was born—a flavor that's as refreshing as a breath of fresh air and as exhilarating as the first light of dawn. With its crisp finish and chill vibes, it's a testament to our commitment to pushing boundaries and creating something that speaks to the soul.
+            
+            So, from the lab to your lips, we invite you to experience the magic of Original Blue Mist—a flavor that's as unique and unforgettable as you are. Get ready to taste the vibe and let the adventure begin! 🌬️💙 #BlueMistMagic</p>
     </div>
 </section>
 
-<!-- --------------SECTION D--------------------- -->
+<!-- SECTION D -->
 
 <section id="section-d" class="grid-con">
     <div class="d1 l-col-span-full">
@@ -197,8 +214,8 @@
     <div class="d2 l-col-span-full">
         <div class="svg-container">
             <img id="img1-svg" src="images/Mainpage-Images/productdescription-images/bubbles.svg" alt="">
-            <img id="img2-svg" src="images/Mainpage-Images/productdescription-images/Group 60.svg" alt="">
-            <img id="img3-svg" src="images/Mainpage-Images/productdescription-images/Group 64.svg" alt="">
+            <img id="img2-svg" src="images/Mainpage-Images/productdescription-images/Group-60.svg" alt="">
+            <img id="img3-svg" src="images/Mainpage-Images/productdescription-images/Group-64.svg" alt="">
         </div>
     </div>
 
@@ -228,18 +245,18 @@
         </div>
     </div>
 
-    <div class="d5 l-col-start-7 l-col-end-13">
+    <div class="d5-original l-col-start-7 l-col-end-13">
         
-       <h3><p>Picture this: You take a sip of our awesome Velvet Lemonade flavor and bam! It's like a flavor explosion in your mouth. The tangy lemonade hits you with all the feels, while the smooth, velvety goodness leaves you feeling totally boujee.</p>
+       <h3 class="hidden">d5 title</h3><p>Zima's Original Blue Mist is like a breath of fresh air on a summer's day. With every sip, you're transported to a world of sparkling bubbles and zesty citrus goodness. Picture this: a burst of effervescence tickles your taste buds, followed by the tangy zest of lemon dancing across your palate. It's like a symphony of flavor, with each element playing its part to perfection.</p>
 
-        <p> Whether you're chilling with your squad at a rooftop party, hitting up a festival with your crew, or just vibing out in your room, Velvet Lemonade is the vibe you need. Imagine snapping pics for the 'gram with your Velvet Lemonade in hand, #LivingMyBestLife. Or maybe you're just kicking back, scrolling through TikTok, and enjoying that perfect sip of lemony goodness.</p>
+       <p>The sparkling bubbles add a touch of excitement, fizzing and popping with every sip. Meanwhile, the citrus zest brings a refreshing brightness, awakening your senses and leaving you feeling invigorated. And let's not forget about the lemon—it's the star of the show, infusing the flavor with its unmistakable tang and leaving a crisp, clean finish that lingers long after the last sip.</p>
         
-            <p>So yeah, Velvet Lemonade isn't just a drink—it's an experience. It's about living your best life, soaking up the vibes, and making memories with every sip. So why wait? Grab yourself a bottle and let the flavor journey begin! 🍋✨ #VelvetVibes #SipSquadGoals</p></h3>
+       <p>In short, Zima's Original Blue Mist is a taste sensation that's as refreshing as it is exhilarating. It's the perfect blend of sparkle, citrus, and lemony goodness—a flavor experience that's sure to leave you craving more. So go ahead, crack open a bottle and immerse yourself in the magic of Original Blue Mist. Cheers to refreshment! 🫧🍋✨</p>
     </div>
 
 </section>
 
-<!-- --------------FOOTER--------------------- -->
+<!-- FOOTER -->
 <footer id="footer-blue">
     <h2 class="hidden">Footer</h2>
     <div id="footer-des" class="grid-con">

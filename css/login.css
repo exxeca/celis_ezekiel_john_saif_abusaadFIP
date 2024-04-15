@@ -8,8 +8,22 @@
 }
 
 @font-face {
+    font-family: 'SF-Pro-Text-Light';
+    src: local('SF-Pro-Text-Light'), url('../assets/fonts/SF-Pro-Display-Light.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'moxa-bestine';
     src: local('moxa-bestine'), url('../assets/fonts/moxa-bestine.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Bold';
+    src: local('SF-Pro-Display-Bold'), url('../assets/fonts/SF-Pro-Display-Bold.otf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -37,6 +51,25 @@ img, embed, object, video, picture {
   body, p, h1,  h3, h4, h5 {
      margin: 0px;
      padding: 0px;
+  }
+
+  h1 {
+    font-family: 'SF-Pro-Display-Bold';
+
+  }
+
+  h3, h4 {
+    font-family: 'SF-Pro-Text-Regular';
+  }
+
+  h3 {
+    margin: 0 0 0 0;
+  }
+
+
+
+  h4 {
+    margin-bottom: 20px;
   }
 
 
@@ -81,18 +114,24 @@ img, embed, object, video, picture {
 
 
 #container {
+    padding-left: 35px;
+    display: flex;
     margin: 20px auto;
     width: 500px;
     height: 500px;
     border-radius: 70px;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 4px 32px 0 rgba(114, 114, 114, 0.37);
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 
 .row{
+    margin: 0 43px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,8 +140,9 @@ img, embed, object, video, picture {
     border-radius: 20px;
     padding-left: 20px;
     margin-bottom: 25px;
-    width: 350px;
+    width: 422px;
     height: 70px;
+
 } 
 
  input{
@@ -112,10 +152,12 @@ img, embed, object, video, picture {
     background: transparent;
     padding: 10px;
     font-weight: 14px;
+    color: #fff;
 }  
 
 
  button{
+    margin-left: 40px;
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -137,15 +179,20 @@ img, embed, object, video, picture {
 
 
 #text1{
+    margin: -22px 4px -83px 0px;
     color: #fff;
 }
 #text2{
+    margin: -22px 4px -78px 0px;
     color: #fff;
+    font-family: 'SF-Pro-Display-Bold';
 }
 #text3{
+   
     color: #FF9D00;
 }
 #text4{
+    margin: 0 1px -127px -119px;
     color: #fff;
 }
 
