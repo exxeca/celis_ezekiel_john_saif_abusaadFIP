@@ -1,0 +1,280 @@
+  /* Lightbox */
+
+  a{
+    text-decoration: none; /* Remove underline */
+  color: inherit; 
+}
+
+
+  .lightbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px;
+    max-height: 300vh;
+  
+    overflow: hidden;
+    display: none;
+    z-index: 2;
+    /* Apply the slide-right animation */
+    animation: slide-right 1s cubic-bezier(0.445, 0.050, 0.550, 0.950);
+
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+   
+}
+
+.lightbox:target {
+    display: block;
+}
+
+
+
+/* text line */
+
+#menu-lb-text {
+    /* background-color: aqua; */
+    font-family: 'SF-Pro-Text-Regular';
+    height: 50px;
+    color: white;
+}
+
+/* product 1 2 3 style */
+
+
+/* PRODUCT 1 */
+#menu-lb-product1 {
+    background-color: #00A5ED;
+    height: 200px;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url(../images/Mainpage-Images/lightbox-images/500ML_CAN_MOCKUP_01.svg);
+    background-size: cover;
+}
+#menu-lb-product1 h2 {
+    /* background-color: blue; */
+    margin: 205px 0 0 0;
+    text-align: left;
+    font-family: 'SF-Pro-Text-Regular';
+    color: white;
+}
+
+#menu-lb-product1 h3 {
+    /* background-color: blue; */
+    font-family: 'SF-Pro-Text-Regular';
+    margin: 0 0 0 0;
+    text-align: left;
+    font-size: 12px;
+    color: white;
+}
+
+/* PRODUCT 2 */
+
+#menu-lb-product2 {
+    background-color: #B50E46;
+    height: 200px;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url(../images/Mainpage-Images/lightbox-images/500ML_CAN_MOCKUP_02.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#menu-lb-product2 h2 {
+    /* background-color: pink; */
+    margin: 205px 0 0 0;
+    text-align: left;
+    font-family: 'SF-Pro-Text-Regular';
+    color: white;
+}
+
+#menu-lb-product2 h3 {
+    /* background-color: pink; */
+    font-family: 'SF-Pro-Text-Regular';
+    margin: 0 0 0 0;
+    text-align: left;
+    font-size: 12px;
+    color: white;
+}
+
+
+/* PRODUCT 3 */
+
+#menu-lb-product3 {
+    background-color:#630EAB;
+    height: 200px;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url(../images/Mainpage-Images/lightbox-images/500ML_CAN_MOCKUP_03.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+   
+}
+
+#menu-lb-product3 h2 {
+    /* background-color: VIOLET; */
+    margin: 205px 0 0 0;
+    text-align: left;
+    font-family: 'SF-Pro-Text-Regular';
+    color: white;
+}
+
+#menu-lb-product3 h3 {
+    /* background-color: violet; */
+    font-family: 'SF-Pro-Text-Regular';
+    margin: 0 0 0 0;
+    text-align: left;
+    font-size: 12px;
+    color: white;
+}
+
+/* menu lb prod description  */
+
+#menu-lb-prod {
+    /* background-color: brown; */
+}
+
+#menu-lb-prod ul {
+    margin: -20px 0 0 -30px;
+    font-family: 'SF-Pro-Text-Regular';
+    list-style-type: none;
+    font-size: 10px;
+    text-align: left;
+}
+
+#menu-lb-prod li {
+    margin: 20px 0 0 0;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#menu-lb-prod li img {
+    height: auto;
+    width: 40px;
+    margin-right: 20px;
+    
+}
+
+/* menu lb more  */ 
+
+#menu-lb-lmore h2 {
+    
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 20px;
+   
+    
+}
+
+#menu-lb-lmore {
+    
+    font-family: 'SF-Pro-Text-Regular';
+    /* background-color: darkmagenta; */
+    
+}
+
+#menu-lb-lmore ul {  
+    margin: 0 0 0 -35px;
+    list-style-type: none;  
+    font-size: 10px;
+    color: white;
+}
+
+#menu-lb-lmore ul li {  
+    margin: 10px 0 0 0; 
+}
+
+
+/* Social Media */
+
+#menu-lb-scmedia h2 {
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+#menu-lb-scmedia p {
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 10px;
+    margin: 10px 0 0 0 ;
+   
+}
+
+#menu-lb-scmedia {
+    /* background-color: darkkhaki; */
+    font-family: 'SF-Pro-Text-Regular';
+    color: white;
+   
+   
+}
+
+
+.scmedia-container {
+    display: flex;
+    margin-top: 20px;
+    
+    
+}
+
+ .scmedia1, .scmedia2, .scmedia3 {
+    /* background-color: black; */
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 5px; 
+} 
+
+.scmedia1 {
+    background-image: url(../images/Mainpage-Images/lightbox-images/FB.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.scmedia2 {
+    background-image: url(../images/Mainpage-Images/lightbox-images/IG.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.scmedia3 {
+    background-image: url(../images/Mainpage-Images/lightbox-images/X.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+
+/* Menu Design  */ 
+
+#menu-lb-design {
+    /* background-color: deepskyblue; */
+    margin-top: 100px;
+    width: auto;
+    height: 200px;
+    background-image: url(../images/Mainpage-Images/lightbox-images/redefined.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+
+#menu-lb-design2 {
+    /* background-color: deepskyblue; */
+    margin-top: 100px;
+    width: auto;
+    height: 200px;
+    background-image: url(../images/Mainpage-Images/lightbox-images/Layer\ 1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+
+

@@ -1,0 +1,475 @@
+
+
+@font-face {
+    font-family: 'SF-Pro-Text-Regular';
+    src: local('SF-Pro-Text-Regular'), url('../assets/fonts/SF-Pro-Display-Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-Pro-Text-Light';
+    src: local('SF-Pro-Text-Light'), url('../assets/fonts/SF-Pro-Display-Light.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'moxa-bestine';
+    src: local('moxa-bestine'), url('../assets/fonts/moxa-bestine.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Bold';
+    src: local('SF-Pro-Display-Bold'), url('../assets/fonts/SF-Pro-Display-Bold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none; /* Remove underline */
+  color: inherit; 
+}
+
+a{
+    text-decoration: none; /* Remove underline */
+  color: inherit; 
+}
+
+body {
+    background-color: #06060E;
+}
+
+h2, p {
+    color: white;
+}
+
+.blur {
+    position: relative; 
+}
+
+.sec1 {
+    margin-top: 429px;
+}
+
+.m-m-t {
+    font-family: 'moxa-bestine';
+}
+
+/* MARGINS - TOP, BOTTOM, RIGHT, LEFT */
+
+.m-m-t h2:nth-child(1) {
+    margin: -566px 0 0 194px;
+    font-size: 154px;
+    color: #fff;
+}
+
+.m-m-t h2:nth-child(2) {
+    margin: 10px 0 45px 194px; 
+    font-size: 154px;
+    color: #fff;
+    /* background-color: bisque; */
+}
+
+.m-m-t h2:nth-child(3) {
+    margin: -53px 121px 0 191px;
+    font-size: 180px;
+    color: #fff;
+    /* background-color: blueviolet; */
+    padding: 0;
+}
+
+.line h2 {
+    color: #FF9D00;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 12px;
+    text-align: center;
+}
+
+.blur::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.5);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    z-index: -1;
+    border-radius: inherit; 
+    opacity: 0;
+}
+
+.m-m-i img {
+    width: 256px;
+    position: absolute;
+    top: -397px;
+    left: 101px;
+    margin: 15px 0 0 353px;
+}
+
+
+
+/* -------------------- */
+
+
+.bg-bear {
+    height: 500px;
+    width: 500px;
+    /* margin-top: -200px; */
+    padding: 0;
+    z-index: 0;
+    background-color: aqua;
+    position: absolute;
+}
+
+#menu-nav ul {
+    /* background-color: aqua; */
+    margin-top: 35px;
+    margin-left: 165px;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 15px;
+}
+
+#menu-nav li {
+    display: inline;
+    margin: 5px;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+#menu-lb img {
+    margin-top: 22px;
+}
+
+.box {
+    /* opacity: 0.2; */
+}
+
+img, embed, object, video, picture {
+    max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body, p, h1, h3, h4, h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+.box {
+    /* background-color: rgb(97, 0, 21); */
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* padding: 50px; */
+    /* padding-bottom: 60px; */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#menu,
+#logo {
+    padding: 30px;
+}
+
+#hero-image {
+    /* display: none; */
+    position: relative;
+    display: inline-block;
+    padding: 75px;
+    cursor: pointer;
+}
+
+#hero-image img::after {
+    content: "Hovered!";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Fade-in transition */
+}
+
+#hero-image img:hover::after {
+    opacity: 1;
+}
+
+
+
+/* -------------------SECTION B--------------------------- */
+
+
+#section-b{
+    margin-top: 100px;
+}
+#section-b div {
+    margin: -5px;
+    width: 100%;
+    /* height: 100em; */
+    /* background-image: url(../images/Mainpage-Images/section2-banner.png); */
+}
+
+/* ----------------SECTION B----------- */
+
+.p1 {
+    margin: 200px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* ----------------SECTION C----------- */
+
+#section-c {
+    /* background-color: #FF9D00; */
+    height: 150vh;
+    width: auto;
+}
+
+.p2 {
+    /* background-color:darkkhaki; */
+    height: 50VH;
+}
+
+#section-c h2 {
+    font-size: 140px;
+    font-family: 'SF-Pro-Display-Bold';
+}
+
+.p3 {
+    background-image: url(../images/Mainpage-Images/productdescription-images/Image\ 3@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: auto;
+   
+}
+
+.p4 {
+    color: #fff;
+    
+}
+
+.p4 h3 {
+    font-size: 25px;
+    font-family: 'SF-Pro-Text-Regular';
+    margin-bottom: 20px;
+}
+
+.p4 h4 {
+    font-size: 14px;
+    font-family: 'SF-Pro-Text-Light';
+    width: 500px;
+}
+
+.p4 h4 p {
+    margin-bottom: 20px;
+}
+
+/* ----------------SECTION D----------- */
+
+#section-d {
+    /* background-color: aquamarine; */
+}
+
+#section-d h2 {
+    /* background-color: #FF9D00; */
+    text-align: center;
+    font-family: 'SF-Pro-Text-Regular';
+}
+
+#section-d .d2 {
+    /* background-color: blanchedalmond; */
+}
+
+.svg-container {
+    text-align: center;
+}
+
+#img1-svg, #img2-svg, #img3-svg {
+    margin-right: 100px;
+    margin-left: 100px;   
+}
+
+.color-container, .tasteprofile-container  {
+    margin-top: 75px;
+}
+
+.d5 h3 {
+    /* background-color: #FF9D00; */
+    text-align: left;
+    font-family: 'SF-Pro-Text-Light';
+    font-size: 23px;
+    margin-top: 300px;
+    width: 550px;
+}
+
+.d5 h3 p {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+#img1 {
+    width: 100%;
+}
+
+#txt h2 {
+    margin: 100px 0 0 0;
+    font-size: 84px;
+}
+
+#txt {
+    font-family: 'SF-Pro-Text-Regular';
+}
+
+/* FOOTER */
+
+#footer-pink {
+    background-color: #FF9FC6;
+}
+
+#footer-blue{
+    background-color: #00A5ED;
+}
+
+#footer-purple{
+    background-color: #9C2DE4;
+
+}
+#footer-des {
+    /* background-color: aqua; */
+    height: 150vh;
+    margin-top: 200px;
+}
+
+.zima-image {
+    /* background-color: #FF9FC6; */
+    margin-top: 50px;
+    height: 50vh;
+    margin-left: 50px;
+    background-image: url(../images/Mainpage-Images/lightbox-images/Layer\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Social Media - Footer */
+
+.scmedia-footer {
+    /* background-color: #1B215E; */
+    height: 50vh;
+    margin-top: 50px;
+}
+
+.scmedia-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+footer .scmedia-footer-box1,
+footer .scmedia-footer-box2,
+footer .scmedia-footer-box3 {
+    height: 120px;
+    width: 120px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+footer .scmedia-footer-box1 {
+    background-image: url(../images/Mainpage-Images/lightbox-images/IG.svg);
+}
+
+footer .scmedia-footer-box2 {
+    background-image: url(../images/Mainpage-Images/lightbox-images/FB.svg);
+}
+
+footer .scmedia-footer-box3 {
+    background-image: url(../images/Mainpage-Images/lightbox-images/X.svg);
+}
+
+footer h3 {
+    color: white;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+footer h4 {
+    color: aliceblue;
+    font-family: 'SF-Pro-Text-Regular';
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+/* A great way to interact freshhness */
+
+.agwtf {
+    /* background-color: antiquewhite; */
+    height: 70vh;
+}
+
+.agwtf h3 {
+    /* background-color: #FF9D00; */
+    font-size: 120px;
+    width: 562px;
+    font-family: 'moxa-bestine';
+}
+
+.agwtf h3 img {
+    height: auto;
+    width: 90px;
+    transform: rotate(55deg);
+    margin: 0 0 -20px 0;
+}
+
+/* text-description-footer */
+
+#text-description-footer {
+    /* background-color: #E1066D; */
+    height: 70vh;
+}
+
+#text-description-footer h3 {
+    color: white;
+    font-size: 15px;
+    width: 400px;
+    font-family: 'SF-Pro-Text-Light';
+}
+
+/* LOGOZIMAFOOTER */
+
+#logo-zima-footer {
+    /* background-color: #1B215E; */
+    height: 20vh;
+}
+
+#logo-zima-footer h3 {
+    font-family: 'moxa-bestine';
+    font-size: 90px;
+}
+
+

@@ -1,0 +1,273 @@
+
+
+@font-face {
+    font-family: 'SF-Pro-Text-Regular';
+    src: local('SF-Pro-Text-Regular'), url('../assets/fonts/SF-Pro-Display-Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'moxa-bestine';
+    src: local('moxa-bestine'), url('../assets/fonts/moxa-bestine.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a{
+    text-decoration: none; /* Remove underline */
+  color: inherit; 
+}
+
+
+.blur {
+    position: relative; 
+ }
+ 
+.sec1{
+    margin-top: 429px;
+}
+
+.m-m-t{
+    font-family: 'moxa-bestine';
+    
+    
+ }
+
+  /* MARGINS - TOP, BOTTOM, RIGHT, LEFT */
+
+ .m-m-t h2:nth-child(1){
+    margin: -566px 0 0 194px;
+    font-size: 154px;
+    color: #fff;
+ }
+
+
+ .m-m-t h2:nth-child(2){
+
+    margin: 10px 0 45px 194px; 
+    font-size: 154px;
+    color: #fff;
+    /* background-color: bisque; */
+ }
+
+
+ .m-m-t h2:nth-child(3){
+    margin: -53px 121px 0 191px;
+    font-size: 180px;
+    color: #fff;
+    /* background-color: blueviolet; */
+    padding: 0;
+ }
+
+
+
+
+footer div{
+
+    margin: -182px 0 0 0;
+
+}
+
+.line h2 {
+    color: #FF9D00;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 12px;
+    
+    text-align: center;
+}
+
+footer div:nth-child(3){
+    margin-left: -204px;
+    width: 1170px;
+    margin-top: -43px;
+    border-top: solid 2px #fff;
+    opacity: 0.6;
+}
+
+footer div:nth-child(2){
+    margin:-62px 0px 0px -91px;
+    /* width: 1170px; */
+
+    /* border-top: solid 2px #fff; */
+    /* opacity: 0.6; */
+}
+
+footer div:nth-child(4){
+
+    margin: -62px 0px 0px 209px;
+  width: 100px;
+
+     /*  border-top: solid 2px #fff;
+    opacity: 0.6; */
+}
+
+
+
+
+
+ .blur::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.5);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    z-index: -1;
+    border-radius: inherit; 
+    opacity: 0;
+   
+ }
+
+
+
+ .m-m-i img{
+    width: 256px;
+    position: absolute;
+    top: -397px;
+    left: 101px;
+    margin: 15px 0 0 353px;
+ }
+
+
+
+
+/* -------------------- */
+
+
+.bg-bear {
+    height: 500px;
+    width: 500px;
+    /* margin-top: -200px; */
+    padding: 0;
+    z-index: 0;
+    background-color: aqua;
+    position: absolute;
+}
+
+#menu-nav ul {
+    /* background-color: aqua; */
+    margin-top: 35px;
+    margin-left: 165px;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 15px;
+}
+
+#menu-nav li{
+    display: inline;
+    margin: 5px;
+    
+    text-align: center;
+    
+    /* background-color: blue; */
+    
+}
+
+body {
+    position: relative;
+    background-image: url(../images/Landing-Page-Images/PNG/bg-bear.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#menu-lb img {
+    margin-top: 22px;
+}
+
+.box {
+    /* opacity: 0.2; */
+}
+
+
+
+
+
+
+
+/* ------------------------------------------- */
+
+
+
+
+img, embed, object, video, picture {
+    max-width: 100%;
+  }
+
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+
+  
+  body, p, h1,  h3, h4, h5 {
+     margin: 0px;
+     padding: 0px;
+  }
+  
+ 
+  
+  .hidden {
+     display: none;
+  }
+  
+  .box {
+     /* background-color: rgb(97, 0, 21); */
+     color: rgb(255, 255, 255);
+     border-radius: 5px;
+     /* padding: 50px; */
+     /* padding-bottom: 60px; */
+     text-align: center;
+     margin-top: 10px;
+     margin-bottom:10px;
+   }
+  #menu, #logo{
+      padding:30px ;
+  }
+
+
+
+   #hero-image {
+    /* display: none; */
+    position: relative;
+    display: inline-block;
+    padding: 75px;
+    cursor: pointer;
+   }
+   
+   #hero-image img::after {
+    content: "Hovered!";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Fade-in transition */
+   }
+
+   #hero-image img:hover::after {
+    opacity: 1; 
+  }
+
+/* .video3d {
+    height: 30vh;
+    width: auto;
+    background-color: #FF9D00;
+    margin-top: 200px;
+
+} */
+
+
+
