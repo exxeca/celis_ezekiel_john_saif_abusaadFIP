@@ -415,7 +415,7 @@ background-color: #06060E;
     transition: background-color 0.5s ease; /* Smooth transition */
 }
 
-#txt button:active {
+.btn1:active{
     background-color: #E1066D; /* Darker green on hover */
 }
 
@@ -438,7 +438,7 @@ background-color: #06060E;
     transition: background-color 0.5s ease; /* Smooth transition */
 }
 
-#txt .btn2:active {
+.btn2:active {
     background-color: #1B215E; /* Darker green on hover */
 }
 
@@ -461,7 +461,7 @@ background-color: #06060E;
     transition: background-color 0.5s ease; /* Smooth transition */
 }
 
-#txt .btn3:active {
+ .btn3:active {
     background-color: #6D0643; /* Darker green on hover */
 }
 
@@ -652,3 +652,11 @@ footer h4 {
     width: 38em;
 
 }
+
+
+
+
+
+  
+  
+

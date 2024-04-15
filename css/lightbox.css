@@ -16,7 +16,7 @@
   
     overflow: hidden;
     display: none;
-    z-index: 2;
+    z-index: 3;
     /* Apply the slide-right animation */
     animation: slide-right 1s cubic-bezier(0.445, 0.050, 0.550, 0.950);
 
@@ -147,7 +147,7 @@
     text-align: left;
 }
 
-#menu-lb-prod li {
+#menu-lb-prod li a {
     margin: 20px 0 0 0;
     /* background-color: crimson; */
     display: flex;
@@ -323,3 +323,67 @@
 }
 
 
+/* animations for the lb*/
+/* original */
+.hover-animation1:hover {
+	animation: text-shadow-pop-tl1 0.6s both;
+}
+
+
+@keyframes text-shadow-pop-tl1 {
+    0% {
+      text-shadow: 0 0 #00A5ED, 0 0 #00A5ED, 0 0 #00A5ED, 0 0 #00A5ED, 0 0 #00A5ED, 0 0 #00A5ED, 0 0 #00A5ED, 0 0 #00A5ED;
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      text-shadow: -1px -1px #00A5ED, -2px -2px #00A5ED, -3px -3px #00A5ED, -4px -4px #00A5ED, -5px -5px #00A5ED, -6px -6px #00A5ED, -7px -7px #00A5ED, -8px -8px #00A5ED;
+      transform: translateX(8px) translateY(8px);
+    }
+}
+
+
+/* velvet */
+.hover-animation2:hover {
+	animation: text-shadow-pop-tl2 0.6s both;
+}
+
+@keyframes text-shadow-pop-tl2 {
+    0% {
+      text-shadow: 0 0 #E1066D, 0 0 #E1066D, 0 0 #E1066D, 0 0 #E1066D, 0 0 #E1066D, 0 0 #E1066D, 0 0 #E1066D, 0 0 #E1066D;
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      text-shadow: -1px -1px #E1066D, -2px -2px #E1066D, -3px -3px #E1066D, -4px -4px #E1066D, -5px -5px #E1066D, -6px -6px #E1066D, -7px -7px #E1066D, -8px -8px #E1066D;
+      transform: translateX(8px) translateY(8px);
+    }
+}
+
+/* midnight shadowberry */
+
+.hover-animation3:hover {
+	animation: text-shadow-pop-tl3 0.6s both;
+}
+
+@keyframes text-shadow-pop-tl3 {
+    0% {
+      text-shadow: 0 0 #8B07E0, 0 0 #8B07E0, 0 0 #8B07E0, 0 0 #8B07E0, 0 0 #8B07E0, 0 0 #8B07E0, 0 0 #8B07E0, 0 0 #8B07E0;
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      text-shadow: -1px -1px #8B07E0, -2px -2px #8B07E0, -3px -3px #8B07E0, -4px -4px #8B07E0, -5px -5px #8B07E0, -6px -6px #8B07E0, -7px -7px #8B07E0, -8px -8px #8B07E0;
+      transform: translateX(8px) translateY(8px);
+    }
+}
+
+
+/* menu lb prod */
+
+#menu-lb-prod ul li a {
+    color: white; /* Initial color */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+#menu-lb-prod ul li a:hover {
+    color: #FF9D00; /* Color on hover */
+    
+}

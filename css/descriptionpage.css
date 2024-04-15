@@ -478,3 +478,135 @@ footer h4 {
 }
 
 
+
+/* SECTION E */
+
+#section-e {
+    
+    height: 100%;
+    width: auto;
+    margin-top: 120px;
+}
+
+
+/* SECTION F */
+
+#section-f {
+    /* background-color: #FF9D00; */
+    margin-top: 100px;
+    height: 70vh;
+}
+
+#section-f h3 {
+    text-align: center;
+    font-family: 'SF-Pro-Display-Bold';
+    color: white;
+    font-size: 80px;
+}
+
+#section-f #flavor-vibe1 {
+    /* background-color: #FF9D00; */
+    height: 120px;
+    margin-top: -150px; 
+}
+
+#section-f #flavor-vibe2 {
+    /* background-color: #FF9D00; */
+    height: 120px;
+    margin-top: -150px; 
+}
+
+
+/* Flavor Vibe 1 */
+
+
+#flavor-vibe1 .cards {
+    perspective: 1000px;
+  }
+  
+  #flavor-vibe1 .card {
+    width: auto;
+    height: 250px;
+    background: #16161d;
+    /* border: 2px solid #555555; */
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+  #flavor-vibe1 .card:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  }
+  
+  #flavor-vibe1 .card_title {
+    color: #fff;
+    position: absolute;
+    top:166%;
+    right: 175px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    font-family: 'SF-Pro-Display-Bold';
+    font-size: 30px;
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  
+  #flavor-vibe1 .card:hover .card_title {
+    transform: translateZ(50px);
+  }
+
+
+  /* Flavor Vibe 2 */
+
+
+  #flavor-vibe2 .cards {
+    perspective: 1000px;
+  }
+  
+  #flavor-vibe2 .card {
+    width: auto;
+    height: 250px;
+    background: #16161d;
+    /* border: 2px solid #555555; */
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+  #flavor-vibe2 .card:hover {
+    transform: translateZ(-10px) rotateX(20deg) rotateY(-20deg);
+  }
+  
+  #flavor-vibe2 .card_title {
+    color: #fff;
+    font-family: 'SF-Pro-Display-Bold';
+    font-size: 30px;
+    position: absolute;
+    top: 166%;
+    right: 235px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    /* font: 700 1.5rem monospace; */
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    
+  }
+  
+  #flavor-vibe2 .card:hover .card_title {
+    transform: translateZ(50px);
+  }
+
+  
+
+
+
+  
+
