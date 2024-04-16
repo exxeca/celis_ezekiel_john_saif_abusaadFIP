@@ -465,15 +465,6 @@ background-color: #06060E;
     background-color: #6D0643; /* Darker green on hover */
 }
 
-/* SECTION D */
-
-.section-d {
-  
-}
-
-.frame {
-    margin-top: 150px;
-}
 
 
 
@@ -625,33 +616,594 @@ footer h4 {
 }
 
 
-/* -----------------svgs----------------- */
 
-#section-d{
+/* IMAGE ANIMATION FOR VELVET */
+
+#img1 {
     position: relative;
+    
 }
 
-.can-svgs{
+.product-containers1 {
+    position: relative;
+   
+}
+
+#mage1-v {
+    position: relative;
+    z-index: 2;
+}
+
+#mage2-v {
+    position: absolute;
+    z-index: 1;
+    width: 350px; 
+    height: auto; 
+    top: 20px; /* Start the element above the viewport */
+    left: 45px;
+}
+
+#img1:hover #mage2-v {
+    animation: slide-in-top-v 1s ease forwards; /* Apply the slideDownRotate animation when #img3 is hovered */
+}
+
+@keyframes slide-in-top-v {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(325px, 50px) translateZ(150px) rotateZ(25deg);
+    }
+}
+
+#img1 #mage2-v {
+    animation: return-to-initial-slide-v 1.5s ease-in-out forwards;
+}
+
+@keyframes return-to-initial-slide-v {
+    0% {
+        transform: translate(325px, 50px) translateZ(150px) rotateZ(25deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+/* image1 animation */
+
+#hover-image1-v {
+    position: absolute;
+    top: 50px;
+    left: 30em;
+    height: 100%;
+    width: 40%;
+    transition: transform 1s ease; 
+}
+
+#img1:hover #hover-image1-v {
+    animation: k1-v 1.5s ease-in-out forwards; 
+}
+
+#img1 #hover-image1-v {
+    animation: return-to-initial1-v 1.5s ease-in-out forwards;
+}
+
+@keyframes k1-v {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(60) rotateZ(366deg);
+    }
+    100% {
+        transform: translate(-990px, -130px) translateZ(-110px) rotateZ(395deg);
+    }
+}
+
+@keyframes return-to-initial1-v {
+    0% {
+        transform: translate(-990px, -130px) translateZ(-110px) rotateZ(395deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+
+/* image2 animation */
+#hover-image2-v {
+    position: absolute;
+    top: 210px;
+    left: 29em;
+    height: 100%;
+    width: 40%;
+    transition: transform 1s ease; 
+    z-index: 2;
+}
+
+#img1:hover #hover-image2-v {
+    animation: k2-v 1.5s ease-in-out forwards; 
+}
+
+#img1 #hover-image2-v {
+    animation: return-to-initial2-v 1.5s ease-in-out forwards;
+}
+
+@keyframes k2-v {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(10deg);
+    }
+    100% {
+        transform: translate(-1410px, -140px) translateZ(190px) rotateZ(-225deg);
+    }
+}
+
+@keyframes return-to-initial2-v {
+    0% {
+        transform: translate(-1410px, -140px) translateZ(190px) rotateZ(-225deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+
+
+/* IMAGE ANIMATION FOR ORIGINAL*/
+
+#img2 {
+    position: relative;
+    
+}
+
+.product-containers2 {
+    position: relative;
+   
+}
+
+#mage1-o {
+    position: relative;
+    z-index: 2;
+}
+
+#mage2-o {
+    position: absolute;
+    z-index: 1;
+    width: 350px; 
+    height: auto; 
+    top: 1px; /* Start the element above the viewport */
+    left: 45px;
+}
+
+#img2:hover #mage2-o {
+    animation: slide-in-top-o 1s ease forwards; /* Apply the slideDownRotate animation when #img3 is hovered */
+}
+
+@keyframes slide-in-top-o {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(-125px, 20px) translateZ(150px) rotateZ(-25deg);
+    }
+}
+
+#img2 #mage2-o {
+    animation: return-to-initial-slide-o 1.5s ease-in-out forwards;
+}
+
+@keyframes return-to-initial-slide-o {
+    0% {
+        transform: translate(-125px, 20px) translateZ(150px) rotateZ(-25deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+
+/* image1 animation */
+
+#hover-image1-o {
+    position: absolute;
+    top: 50px;
+    left: -5em;
+    height: 100%;
+    width: 40%;
+    transition: transform 1s ease; 
+    
+}
+
+#img2:hover #hover-image1-o {
+    animation: k1-o 1.5s ease-in-out forwards; 
+}
+
+#img2 #hover-image1-o {
+    animation: return-to-initial1-o 1.5s ease-in-out forwards;
+}
+
+@keyframes k1-o {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(410px, 10px) translateZ(150px) rotateZ(95deg);
+    }
+}
+
+@keyframes return-to-initial1-o {
+    0% {
+        transform: translate(410px, 10px) translateZ(150px) rotateZ(95deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+
+/* image2 animation */
+#hover-image2-o {
+    position: absolute;
+    top: 210px;
+    left: 29em;
+    height: 100%;
+    width: 40%;
+    transition: transform 1s ease; 
+    z-index: 2;
+}
+
+#img2:hover #hover-image2-o {
+    animation: k2-o 1.5s ease-in-out forwards; 
+}
+
+#img2 #hover-image2-o {
+    animation: return-to-initial2-o 1.5s ease-in-out forwards;
+}
+
+@keyframes k2-o {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(10deg);
+    }
+    100% {
+        transform: translate(-810px, -240px) translateZ(150px) rotateZ(-225deg);
+    }
+}
+
+@keyframes return-to-initial2-o {
+    0% {
+        transform: translate(-910px, -250px) translateZ(150px) rotateZ(-225deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+/* IMAGE ANIMATION FOR SHADOWBERRY*/
+
+#img3 {
+    position: relative;
+    
+}
+
+.product-container3 {
+    position: relative;
+   
+}
+
+/* image 1 and 2 */
+
+#mage1-s {
+    position: relative;
+    z-index: 2;
+}
+
+#mage2-s {
+    position: absolute;
+    z-index: 1;
+    width: 350px; 
+    height: auto; 
+    top: 1px; /* Start the element above the viewport */
+    left: 45px;
+}
+
+#img3:hover #mage2-s {
+    animation: slide-in-top-s 1s ease forwards; /* Apply the slideDownRotate animation when #img3 is hovered */
+}
+
+@keyframes slide-in-top-s {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(310px, 60px) translateZ(150px) rotateZ(25deg);
+    }
+}
+
+#img3 #mage2-s {
+    animation: return-to-initial-slide-s 1.5s ease-in-out forwards;
+}
+
+@keyframes return-to-initial-slide-s {
+    0% {
+        transform: translate(310px, 60px) translateZ(150px) rotateZ(25deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+
+/* image1 animation */
+
+#hover-image1-s {
+    position: absolute;
+    top: 50px;
+    left: -5em;
+    height: 100%;
+    width: 40%;
+    transition: transform 1s ease; 
+    
+}
+
+#img3:hover #hover-image1-s {
+    animation: k1-s 1.5s ease-in-out forwards; 
+}
+
+#img3 #hover-image1-s {
+    animation: return-to-initial1-s 1.5s ease-in-out forwards;
+}
+
+@keyframes k1-s {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(310px, 110px) translateZ(150px) rotateZ(95deg);
+    }
+}
+
+@keyframes return-to-initial1-s {
+    0% {
+        transform: translate(310px, 110px) translateZ(150px) rotateZ(95deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+
+/* image2 animation */
+#hover-image2-s {
+    position: absolute;
+    top: 50px;
+    left: 23em;
+    height: 100%;
+    width: 40%;
+    transition: transform 1s ease; 
+    z-index: 2;
+}
+
+#img3:hover #hover-image2-s {
+    animation: k2-s 1.5s ease-in-out forwards; 
+}
+
+#img3 #hover-image2-s {
+    animation: return-to-initial2-s 1.5s ease-in-out forwards;
+}
+
+@keyframes k2-s {
+    0% {
+        transform: translate(0, 0) translateZ(0) rotateZ(deg);
+    }
+    50% {
+        transform: translate(0, 0) translateZ(32) rotateZ(10deg);
+    }
+    100% {
+        transform: translate(-310px, -110px) translateZ(150px) rotateZ(-105deg);
+    }
+}
+
+@keyframes return-to-initial2-s {
+    0% {
+        transform: translate(-310px, -110px) translateZ(150px) rotateZ(-105deg);
+    }
+    100% {
+        transform: translate(0, 0) translateZ(0) rotateZ(0deg);
+    }
+}
+
+
+
+
+
+
+/* -----------------svgs----------------- */
+/* SECTION D */
+
+
+/* .frame {
+    margin-top: 150px;
+} */
+
+
+
+/* .can-svgs{
+    position: absolute;
+} */
+
+#blue-svg{
+    top: 13em;
+    left: 20em;
+    height: auto;
+    width: 530px;  
     position: absolute;
 }
 
-
 #valvet-svg{
-    top: 860px;
-    left: 793px;
-    width: 31em;
+    top: 53em;
+    left: 50em;
+    height: auto;
+    width: 590px;
+    position: absolute;
 }
-#blue-svg{
-    top: 333px;
-    left: 324px;
-    width: 35em;
-}
-#purple-svg{
-    top: 872.6px;
-    left: -180px;
-    width: 38em;
 
+#purple-svg{
+    top: 58em;
+    left: -6em;
+    height: auto;
+    width: 555px;
+    position: absolute;
+     
 }
+
+#section-d {
+    position: relative;
+}
+
+/* Hover Animation */
+
+
+/* original animation */
+
+.can-image1 {
+    position: relative;
+    cursor: pointer;
+}
+#blue-svg::after {
+    content: ""; 
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, 10px);
+    padding: 250px;
+    z-index: 999; 
+    background-image: url(../images/Mainpage-Images/cans-frame/textelemnt@2x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+}
+
+#blue-svg:hover::after {
+    opacity: 1; /* Show on hover */
+}
+
+
+
+/* midnight */
+
+
+.can-image2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.can-image2::after {
+    content: ""; 
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 100%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Adjust as needed */
+    padding: 200px; /* Adjust as needed */
+    z-index: 999; 
+    background-image: url(../images/Mainpage-Images/cans-frame/mdnghtshdowbbery@2x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+}
+
+.can-image2:hover::after {
+    opacity: 1; /* Show on hover */
+}
+
+/* Velvet */
+
+
+.can-image3 {
+    position: relative;
+    cursor: pointer;
+}
+
+.can-image3::after {
+    content: ""; 
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 5%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Adjust as needed */
+    padding: 250px; /* Adjust as needed */
+    z-index: 999; 
+    background-image: url(../images/Mainpage-Images/cans-frame/velvet@2x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+}
+
+.can-image3:hover::after {
+    opacity: 1; /* Show on hover */
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
